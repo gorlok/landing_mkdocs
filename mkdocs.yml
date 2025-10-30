@@ -1,0 +1,60 @@
+site_name: Transcriptor AI
+site_description: Sistema moderno para transcripciones con Whisper
+site_author: Equipo de Desarrollo
+site_url: http://transcriptor.local/
+
+theme:
+  name: material
+  language: es
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+  font:
+    text: Inter
+    code: Fira Code
+  features:
+    - navigation.tabs
+    - navigation.footer
+    - content.code.copy
+    - content.action.edit
+    - content.anchors
+    - header.autohide
+    - content.tabs.link
+
+nav:
+  - Inicio: index.md
+  - Características: features.md
+  - Cómo funciona: how-it-works.md
+  - Capturas: screenshots.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - footnotes
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.highlight
+  - pymdownx.extra
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - material
+
+extra:
+  social:
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.local/transcriptor
+    - icon: fontawesome/brands/jira
+      link: https://jira.local/projects/transcriptor
+    - icon: fontawesome/brands/confluence
+      link: https://confluence.local/pages/transcriptor
